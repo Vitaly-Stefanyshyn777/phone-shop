@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.7rem;
+    color: black;
+    background-color: #fbfbfb;
+}
+
+.wrapper__input {
+    padding: 1rem;
+    border: 0.2rem solid #999;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.wrapper {
+    margin: 1rem;
+    display: grid;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+    grid-gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    border: 0.1rem solid #e5e5e5;
+    background: #fff;
+    padding: 2rem;
+}
+
+.card__images {
+    width: 25rem;
+    height: 25rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.card__images img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card__hr {
+    height: 0.1rem;
+    background: #e5e5e5;
+    margin-bottom: 2rem;
+}
+
+.card__title {
+    color: #52a3dc;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.card__descr {
+    color: #999;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    height: 15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card__rating {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.rating__span {
+    color: #f14635;
+    font-size: 2rem;
+}
+
+.card__comment {
+    color: #52a3dc;
+}
+
+.card__m {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__m-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.card__m-text {
+    color: #999;
+    font-size: 1.7rem;
+}
+
+.card__m-money {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.card__m-left mark {
+    margin-right: 1rem;
+}
+
+.card__m-money span {
+    color: #999;
+    font-size: 1.5rem;
+}
+
+.img-svg {
+    width: 8rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.img-b5 {
+    width: 8rem;
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+}
+
+.show {
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: #999;
+    padding: 1.5rem 4rem;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+    font-size: 1.9rem;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.show:hover {
+    background-color: #f14635;
+    padding: 1.5rem 10rem;
+}
+
+.close {
+    display: block;
+    background-color: #999;
+    border: none;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border-radius: 0.4rem;
+    margin: 0 auto;
+}
+
+.dn {
+    display: none;
+}
+
+.db {
+    display: block;
+}
