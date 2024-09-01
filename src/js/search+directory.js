@@ -1,5 +1,5 @@
 // Активує суворий режим, що дозволяє уникнути помилок у коді.
-export function create(name) {
+
   const showButton = document.querySelector(".show");
   const btnCloseButton = document.querySelector(".close");
   const wrapper = document.querySelector(".wrapper");
@@ -245,4 +245,4 @@ export function create(name) {
   // Реалізація функціоналу пошуку по моделях телефонів.
 
   // -------------------------------------------------------------------------------------AI----------------------------------------------------
-}
+
