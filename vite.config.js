@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
-import { glob } from 'glob';
-import injectHTML from 'vite-plugin-html-inject';
-import FullReload from 'vite-plugin-full-reload';
-import SortCss from 'postcss-sort-media-queries';
+import { defineConfig } from 'vite'
+import { glob } from 'glob'
+import injectHTML from 'vite-plugin-html-inject'
+import FullReload from 'vite-plugin-full-reload'
+import SortCss from 'postcss-sort-media-queries'
 
 export default defineConfig(({ command }) => {
   return {
@@ -17,20 +17,20 @@ export default defineConfig(({ command }) => {
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
-              return 'vendor';
+              return 'vendor'
             }
           },
-          entryFileNames: chunkInfo => {
+          entryFileNames: (chunkInfo) => {
             if (chunkInfo.name === 'commonHelpers') {
-              return 'commonHelpers.js';
+              return 'commonHelpers.js'
             }
-            return '[name].js';
+            return '[name].js'
           },
-          assetFileNames: assetInfo => {
+          assetFileNames: (assetInfo) => {
             if (assetInfo.name && assetInfo.name.endsWith('.html')) {
-              return '[name].[ext]';
+              return '[name].[ext]'
             }
-            return 'assets/[name]-[hash][extname]';
+            return 'assets/[name]-[hash][extname]'
           },
         },
       },
@@ -44,5 +44,5 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
-  };
-});
+  }
+})
